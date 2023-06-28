@@ -1,12 +1,9 @@
 function sumMul(n,m){
+    if(m<=n)  return 'INVALID'
     let sum = 0;
-    if(m<n) {
-        return 'INVALID'
-    } else {
-        for (let i=n; i<m; i++) {
-            if (i%n === 0) {
-                sum+=i
-            }
+    for (let i=n; i<m; i++) {
+        if (i%n === 0) {
+            sum+=i
         }
     }
     return sum;
